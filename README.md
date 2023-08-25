@@ -8,19 +8,26 @@ Version: 1.0.0 (increment the patch/fix version number if you make more commits 
 
 ## Overview
 
-Getting Started
+### Getting Started
+
+Create a new repo called city-explorer-api on GitHub, initialized with a README file. Clone it locally.
+
+Run the command npm init to create a new project.
+
+Use npm install to add the required dependencies to this project: express, dotenv, and cors.
+
 Architecture
 Change Log
 
 Credit and Collaborations
 ChatGPT, <https://github.com/codefellows/seattle-code-301d103>
+
 Time Estimates
-Name of feature: ________________________________
+Name of feature: Server
+Estimate of time needed to complete: 3
 
-Estimate of time needed to complete: _____
+Start time: 2pm
 
-Start time: _____
+Finish time: 6pm
 
-Finish time: _____
-
-Actual time needed to complete: _____
+Actual time needed to complete: 4hr
