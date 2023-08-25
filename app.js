@@ -68,7 +68,7 @@ app.get('/weather', async (req, res) => {
 
     try {
         const apiUrl = `http://api.weatherbit.io/v2.0/forecast/daily?key=${WEATHER_API_KEY}&lon=${lon}&lat=${lat}`;
-        const weatherResponse = await axios.get(apiUrl);
+        const weatherResponse = await axios.get(apiServerUrl);
         const weatherData = retrieveWeatherData(weatherResponse.data);
 
         res.json(weatherData);
@@ -86,7 +86,7 @@ app.get('/movies', async (req, res) => {
 
     try {
         const apiUrl = `https://api.themoviedb.org/3/search/movie?api_key=${MOVIE_API_KEY}&query=${searchQuery}`;
-        const movieResponse = await axios.get(apiUrl);
+        const movieResponse = await axios.get(apiServerUrl);
         const movieData = retrieveMovieData(movieResponse.data);
 
         res.json(movieData);
